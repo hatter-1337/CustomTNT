@@ -1,0 +1,30 @@
+name: CustomTNT
+version: 1.0.0
+main: ru.servak.customtnt.CustomTntPlugin
+api-version: '1.21'
+softdepend:
+  - ProtectionStones
+  - WorldGuard
+commands:
+  customtnt:
+    description: Выдать и настроить кастомный динамит.
+    usage: /customtnt help
+    permission: customtnt.admin
+    aliases:
+      - ctnt
+permissions:
+  customtnt.give:
+    description: Позволяет выдавать кастомный динамит.
+    default: op
+  customtnt.create:
+    description: Позволяет ставить кастомный динамит.
+    default: op
+  customtnt.craft:
+    description: Позволяет крафтить кастомный динамит.
+    default: op
+  customtnt.admin:
+    description: Позволяет редактировать меню блоков.
+    default: op
+  customtnt.reload:
+    description: Позволяет перезагружать конфиг CustomTNT.
+    default: op

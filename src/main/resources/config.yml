@@ -1,0 +1,53 @@
+# Можно создавать сколько угодно типов:
+# tnts:
+#   my_tnt:
+#     name: "&cМой TNT"
+#     lore:
+#       - "&7Мое описание"
+#     power: 6.0
+#     ...
+
+tnts:
+  basic:
+    name: "&cКастомный динамит"
+    lore:
+      - "&7Работает как обычный TNT."
+      - "&7Ломает только выбранные в меню блоки."
+    custom-model-data: 1001
+    fuse-ticks: 80
+    power: 4.0
+    set-fire: false
+    explode-in-water: false
+    breakable-blocks: []
+    recipe:
+      enabled: true
+      shape:
+        - "GRG"
+        - "RTR"
+        - "GRG"
+      ingredients:
+        G: GUNPOWDER
+        R: REDSTONE
+        T: TNT
+
+  strong:
+    name: "&4Усиленный динамит"
+    lore:
+      - "&7Более мощный вариант кастомного TNT."
+      - "&7Настрой блоки через /customtnt menu strong."
+    custom-model-data: 1002
+    fuse-ticks: 80
+    power: 8.0
+    set-fire: false
+    explode-in-water: false
+    breakable-blocks: []
+    recipe:
+      enabled: true
+      shape:
+        - "DRD"
+        - "RTR"
+        - "DRD"
+      ingredients:
+        D: DIAMOND
+        R: REDSTONE_BLOCK
+        T: TNT
